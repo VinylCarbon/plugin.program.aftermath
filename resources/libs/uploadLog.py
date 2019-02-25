@@ -25,6 +25,7 @@
 ################################################################################
 
 import os
+import sys
 import re
 import socket
 import pyqrcode
@@ -123,6 +124,7 @@ class Main:
                     self.showResult('%s[CR]%s' % (error, result))
             else:
                 self.showResult('%s[CR]%s' % (error, result))
+        sys.exit()
 
     def getSettings(self):
         self.oldlog   = ADDON.getSetting('oldlog') == 'true'
