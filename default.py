@@ -930,6 +930,7 @@ def clearSpeedTest():
 def viewSpeedTest(img=None):
     img = os.path.join(SPEEDTESTFOLD, img)
     notify.speedTest(img)
+    sys.exit(0)
 
 def runSpeedTest():
     try:
