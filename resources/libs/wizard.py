@@ -2753,6 +2753,7 @@ def oldThumbs():
             log("DB Connection Error: %s" % str(e), xbmc.LOGERROR)
             return False
     else: log('%s not found.' % dbfile, xbmc.LOGERROR); return False
+    log("[Clean Old Thumbnails] Cleaning thumbnails older than {0}, or haven't been accessed at least {1} times.".format(str(week), use))
     textexe.execute("SELECT idtexture FROM sizes WHERE usecount < ? AND lastusetime < ?", (use, str(week)))
     found = textexe.fetchall()
     for rows in found:
