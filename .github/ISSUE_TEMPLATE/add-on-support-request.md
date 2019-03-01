@@ -1,9 +1,9 @@
 ---
 name: Add-on Support Request
 about: Request support for a new add-on.
-title: "[Request]"
+title: "[Add-on Request]"
 labels: enhancement
-assignees: drinfernoo
+assignees: ''
 
 ---
 
